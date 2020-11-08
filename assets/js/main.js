@@ -15,7 +15,6 @@
 		xxsmall: '(max-width: 360px)'
 	});
 
-
 	$(function() {
 
 		var	$window = $(window),
