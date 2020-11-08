@@ -9,7 +9,9 @@
 		<title>Epilogue by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<!-- Scripts -->
 		<!--導入Animate CDN-->
     	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
@@ -31,6 +33,10 @@
   				width:90px;
   				height:30px;
   				background-color: #FFE8E8;
+			}
+			.center{
+				display: block;
+		        margin:0 auto;
 			}
 			.button {
 				-moz-appearance: none;
@@ -66,6 +72,7 @@
   			$(document).ready(function() {
   				$("#header").addClass("animated shake");
   				$("#title").addClass("animated bounce");
+  				$("#me").addClass("animated shake");
   				$("#intro").addClass("animated bounce");
 				$("#face").addClass("animated bounce");
 				$("section").addClass("animated bounce");
@@ -96,7 +103,7 @@
 				<!-- Banner -->
 					<section id="intro" class="main">
 						<img src="https://i.imgur.com/NR5iDsM.jpg" width="20%" height="20%"  margin:auto; id="face">
-						<h2 id="title">Winnie Kuo</h2>
+						<h2 id="me">Winnie Kuo</h2>
 						<p>
 							#An Amateur photographer<br>
 							#記錄生活 記錄攝影的點點滴滴<br>
@@ -114,10 +121,17 @@
 								<h3>Taiwan</h3>
 							</header>
 							<p>#看見臺灣<br>#臺北101</p>
-							<div class="row">
-      								<button class="btn btn-block btn-primary pink"><i class="fa fa-thumbs-up"></i>Like</button>
-    								<button class="btn btn-block btn-danger blue"><i class="fa fa-thumbs-down"></i>DisLike</button>
+							<ul class="actions">
+								<div class="row" align="center">
+      								<div class="col-xs-6" align="center">
+      									<button class="btn btn-block btn-primary pink" onclick="alert('Thank you~')"><i class="fa fa-thumbs-up"></i>Like</button>
+    								</div>
+    								<div class="col-xs-6" align="center">
+    								<button class="btn btn-block btn-danger blue " onclick="alert('OK...So Sad...')">
+    								<i class="fa fa-thumbs-down"></i>DisLike</button>
+    								</div>
     							</div>
+							</ul>
 						</article>
 						<article class="item">
 							<header>
@@ -129,9 +143,14 @@
 								#吉野櫻
 							</p>
 							<ul class="actions">
-								<div class="row">
-      								<button class="btn btn-block btn-primary pink"><i class="fa fa-thumbs-up"></i>Like</button>
-    								<button class="btn btn-block btn-danger blue"><i class="fa fa-thumbs-down"></i>DisLike</button>
+								<div class="row" align="center">
+      								<div class="col-xs-6" align="center">
+      									<button class="btn btn-block btn-primary pink" onclick="alert('Thank you~')"><i class="fa fa-thumbs-up"></i>Like</button>
+    								</div>
+    								<div class="col-xs-6" align="center">
+    								<button class="btn btn-block btn-danger blue " onclick="alert('OK...So Sad...')">
+    								<i class="fa fa-thumbs-down"></i>DisLike</button>
+    								</div>
     							</div>
 							</ul>
 						</article>
@@ -140,12 +159,17 @@
 								<a href="#"><img src="https://i.imgur.com/XJIJg7E.jpg" /></a>
 								<h3>People</h3>
 							</header>
-							<p>#從你的全世界路過<br>
+							<p>#從你的全世界路過<br>#臺灣最美的風景是人
 							</p>
 							<ul class="actions">
-								<div class="row">
-      								<button class="btn btn-block btn-primary pink"><i class="fa fa-thumbs-up"></i>Like</button>
-    								<button class="btn btn-block btn-danger blue"><i class="fa fa-thumbs-down"></i>DisLike</button>
+								<div class="row" align="center">
+      								<div class="col-xs-6" align="center">
+      									<button class="btn btn-block btn-primary pink" onclick="alert('Thank you~')"><i class="fa fa-thumbs-up"></i>Like</button>
+    								</div>
+    								<div class="col-xs-6" align="center">
+    								<button class="btn btn-block btn-danger blue " onclick="alert('OK...So Sad...')">
+    								<i class="fa fa-thumbs-down"></i>DisLike</button>
+    								</div>
     							</div>
 							</ul>
 						</article>
@@ -158,9 +182,14 @@
 								#記錄生活
 							</p>
 							<ul class="actions">
-								<div class="row">
-      								<button class="btn btn-block btn-primary pink"><i class="fa fa-thumbs-up"></i>Like</button>
-    								<button class="btn btn-block btn-danger blue"><i class="fa fa-thumbs-down"></i>DisLike</button>
+								<div class="row" align="center">
+      								<div class="col-xs-6" align="center">
+      									<button class="btn btn-block btn-primary pink" onclick="alert('Thank you~')"><i class="fa fa-thumbs-up"></i>Like</button>
+    								</div>
+    								<div class="col-xs-6" align="center">
+    								<button class="btn btn-block btn-danger blue " onclick="alert('OK...So Sad...')">
+    								<i class="fa fa-thumbs-down"></i>DisLike</button>
+    								</div>
     							</div>
 							</ul>
 						</article>
@@ -190,12 +219,6 @@
 					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
